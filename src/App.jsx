@@ -123,14 +123,14 @@
 
 export default function PortfolioLamaranKerja() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white">
+    <div className="min-h-screen w-full overflow-x-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white">
       {/* Navbar */}
-      <nav className="flex items-center justify-between px-8 py-6 border-b border-white/10 backdrop-blur-lg sticky top-0 z-50 bg-black/20">
-        <h1 className="text-xl md:text-2xl font-bold tracking-wide text-cyan-400">
+      <nav className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-10 py-5 gap-4 border-b border-white/10 backdrop-blur-lg sticky top-0 z-50 bg-black/40">
+        <h1 className="text-xl md:text-3xl md:text-5xl font-black tracking-wide text-white">
           PORTFOLIO
         </h1>
 
-        <div className="flex gap-6 text-sm md:text-base text-gray-300">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-lg text-gray-300">
           <a href="#about" className="hover:text-cyan-400 transition">Tentang</a>
           <a href="#skill" className="hover:text-cyan-400 transition">Skill</a>
           <a href="#project" className="hover:text-cyan-400 transition">Project</a>
@@ -139,18 +139,18 @@ export default function PortfolioLamaranKerja() {
       </nav>
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-16 md:py-20 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
+      <section className="w-full max-w-7xl mx-auto px-5 sm:px-8 md:px-12 py-14 md:py-24 grid lg:grid-cols-2 gap-16 items-center min-h-[85vh]">
         <div>
           <p className="text-cyan-400 font-semibold tracking-widest mb-4">
             FRESH GRADUATE
           </p>
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight">
             Esther Renata <br />
             <span className="text-cyan-400">Software Engineer</span>
           </h1>
 
-          <p className="text-gray-300 mt-6 md:mt-8 text-base md:text-lg leading-relaxed max-w-2xl">
+          <p className="text-gray-300 mt-6 md:mt-8 text-lg md:text-xl leading-relaxed md:leading-loose max-w-2xl">
             Fresh graduate SMK Negeri 1 Cimahi jurusan Rekayasa Perangkat Lunak dengan kemampuan fullstack development, administrasi data, dan troubleshooting jaringan. Berpengalaman magang selama 4 bulan di PT Lintasarta sebagai Teknisi Lapangan yang menangani instalasi perangkat, pelaporan teknis, monitoring jaringan, serta pengembangan aplikasi berbasis Laravel dan React. Disiplin, teliti, adaptif, dan siap memberikan kontribusi terbaik di lingkungan kerja profesional.
           </p>
 
@@ -334,4 +334,3 @@ export default function PortfolioLamaranKerja() {
     </div>
   );
 }
-

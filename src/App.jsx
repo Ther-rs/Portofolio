@@ -121,16 +121,17 @@
 
 // export default App
 
+
 export default function PortfolioLamaranKerja() {
   return (
-    <div className="min-h-screen w-full overflow-x-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white">
       {/* Navbar */}
-      <nav className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-10 py-5 gap-4 border-b border-white/10 backdrop-blur-lg sticky top-0 z-50 bg-black/40">
-        <h1 className="text-xl md:text-3xl md:text-5xl font-black tracking-wide text-white">
+      <nav className="flex items-center justify-between px-8 py-6 border-b border-white/10 backdrop-blur-lg sticky top-0 z-50 bg-black/20">
+        <h1 className="text-2xl font-bold tracking-wide text-cyan-400">
           PORTFOLIO
         </h1>
 
-        <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-sm md:text-lg text-gray-300">
+        <div className="flex gap-6 text-sm md:text-base text-gray-300">
           <a href="#about" className="hover:text-cyan-400 transition">Tentang</a>
           <a href="#skill" className="hover:text-cyan-400 transition">Skill</a>
           <a href="#project" className="hover:text-cyan-400 transition">Project</a>
@@ -139,22 +140,22 @@ export default function PortfolioLamaranKerja() {
       </nav>
 
       {/* Hero Section */}
-      <section className="w-full max-w-7xl mx-auto px-5 sm:px-8 md:px-12 py-14 md:py-24 grid lg:grid-cols-2 gap-16 items-center min-h-[85vh]">
+      <section className="max-w-7xl mx-auto px-8 py-20 grid md:grid-cols-2 gap-14 items-center">
         <div>
           <p className="text-cyan-400 font-semibold tracking-widest mb-4">
             FRESH GRADUATE
           </p>
 
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight">
+          <h1 className="text-5xl md:text-7xl font-black leading-tight">
             Esther Renata <br />
             <span className="text-cyan-400">Software Engineer</span>
           </h1>
 
-          <p className="text-gray-300 mt-6 md:mt-8 text-lg md:text-xl leading-relaxed md:leading-loose max-w-2xl">
+          <p className="text-gray-300 mt-8 text-lg leading-relaxed max-w-2xl">
             Fresh graduate SMK Negeri 1 Cimahi jurusan Rekayasa Perangkat Lunak dengan kemampuan fullstack development, administrasi data, dan troubleshooting jaringan. Berpengalaman magang selama 4 bulan di PT Lintasarta sebagai Teknisi Lapangan yang menangani instalasi perangkat, pelaporan teknis, monitoring jaringan, serta pengembangan aplikasi berbasis Laravel dan React. Disiplin, teliti, adaptif, dan siap memberikan kontribusi terbaik di lingkungan kerja profesional.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-8 md:mt-10">
+          <div className="flex flex-wrap gap-4 mt-10">
             <a
               href="#contact"
               className="bg-cyan-400 hover:bg-cyan-300 text-black font-bold px-8 py-4 rounded-2xl transition shadow-xl"
@@ -173,8 +174,8 @@ export default function PortfolioLamaranKerja() {
         </div>
 
         <div className="flex justify-center">
-          <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 p-2 shadow-2xl shadow-cyan-500/40">
-            <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center text-6xl md:text-8xl font-black text-cyan-400 overflow-hidden">
+          <div className="w-80 h-80 md:w-[420px] md:h-[420px] rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 p-2 shadow-2xl shadow-cyan-500/40">
+            <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center text-8xl font-black text-cyan-400 overflow-hidden">
               ER
             </div>
           </div>
@@ -182,25 +183,25 @@ export default function PortfolioLamaranKerja() {
       </section>
 
       {/* About */}
-      <section id="about" className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16 md:py-20">
+      <section id="about" className="max-w-6xl mx-auto px-8 py-20">
         <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-10 border border-white/10 shadow-2xl">
-          <h2 className="text-3xl md:text-4xl font-black text-cyan-400 mb-8">
+          <h2 className="text-4xl font-black text-cyan-400 mb-8">
             Tentang Saya
           </h2>
 
-          <p className="text-gray-300 text-base md:text-lg leading-loose">
+          <p className="text-gray-300 text-lg leading-loose">
             Saya memiliki pengalaman dalam pengembangan aplikasi fullstack menggunakan Laravel, React, PHP, JavaScript, dan MySQL. Selain itu saya juga berpengalaman dalam administrasi data, penyusunan laporan teknis, troubleshooting jaringan fiber optik, serta koordinasi tim saat menjalani PKL di PT Lintasarta. Saya mampu bekerja sesuai SOP, cepat belajar, dan memiliki kemampuan komunikasi yang baik.
           </p>
         </div>
       </section>
 
       {/* Skills */}
-      <section id="skill" className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16 md:py-20">
-        <h2 className="text-3xl md:text-4xl font-black text-center text-cyan-400 mb-14">
+      <section id="skill" className="max-w-6xl mx-auto px-8 py-20">
+        <h2 className="text-4xl font-black text-center text-cyan-400 mb-14">
           Skill & Tools
         </h2>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             "HTML",
             "CSS",
@@ -224,23 +225,23 @@ export default function PortfolioLamaranKerja() {
               key={skill}
               className="bg-white/5 border border-white/10 backdrop-blur-lg rounded-3xl p-6 text-center hover:-translate-y-2 hover:border-cyan-400 transition duration-300 shadow-xl"
             >
-              <p className="font-bold text-sm sm:text-base md:text-lg">{skill}</p>
+              <p className="font-bold text-lg">{skill}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Projects */}
-      <section id="project" className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-16 md:py-20">
-        <h2 className="text-3xl md:text-4xl font-black text-center text-cyan-400 mb-14">
+      <section id="project" className="max-w-7xl mx-auto px-8 py-20">
+        <h2 className="text-4xl font-black text-center text-cyan-400 mb-14">
           Featured Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:scale-105 transition duration-300 shadow-2xl">
-            <div className="h-40 sm:h-52 bg-gradient-to-br from-cyan-400 to-blue-600"></div>
-            <div className="p-5 md:p-7">
-              <h3 className="text-xl md:text-2xl font-bold mb-4">
+            <div className="h-52 bg-gradient-to-br from-cyan-400 to-blue-600"></div>
+            <div className="p-7">
+              <h3 className="text-2xl font-bold mb-4">
                 Website Manajemen Stok
               </h3>
               <p className="text-gray-300 leading-relaxed">
@@ -250,9 +251,9 @@ export default function PortfolioLamaranKerja() {
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:scale-105 transition duration-300 shadow-2xl">
-            <div className="h-40 sm:h-52 bg-gradient-to-br from-purple-500 to-pink-500"></div>
-            <div className="p-5 md:p-7">
-              <h3 className="text-xl md:text-2xl font-bold mb-4">
+            <div className="h-52 bg-gradient-to-br from-purple-500 to-pink-500"></div>
+            <div className="p-7">
+              <h3 className="text-2xl font-bold mb-4">
                 Aplikasi Android Kantin
               </h3>
               <p className="text-gray-300 leading-relaxed">
@@ -262,9 +263,9 @@ export default function PortfolioLamaranKerja() {
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:scale-105 transition duration-300 shadow-2xl">
-            <div className="h-40 sm:h-52 bg-gradient-to-br from-orange-500 to-red-500"></div>
-            <div className="p-5 md:p-7">
-              <h3 className="text-xl md:text-2xl font-bold mb-4">
+            <div className="h-52 bg-gradient-to-br from-orange-500 to-red-500"></div>
+            <div className="p-7">
+              <h3 className="text-2xl font-bold mb-4">
                 Konfigurasi Jaringan
               </h3>
               <p className="text-gray-300 leading-relaxed">
@@ -276,8 +277,8 @@ export default function PortfolioLamaranKerja() {
       </section>
 
       {/* Experience */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16 md:py-20">
-        <h2 className="text-3xl md:text-4xl font-black text-center text-cyan-400 mb-14">
+      <section className="max-w-6xl mx-auto px-8 py-20">
+        <h2 className="text-4xl font-black text-center text-cyan-400 mb-14">
           Pengalaman
         </h2>
 
@@ -298,9 +299,9 @@ export default function PortfolioLamaranKerja() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8 py-16 md:py-20">
-        <div className="bg-gradient-to-r from-cyan-500 to-blue-600 rounded-[30px] md:rounded-[40px] p-6 sm:p-8 md:p-12 text-center shadow-2xl shadow-cyan-500/30">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-6">
+      <section id="contact" className="max-w-5xl mx-auto px-8 py-20">
+        <div className="bg-gradient-to-r from-cyan-500 to-blue-600 rounded-[40px] p-12 text-center shadow-2xl shadow-cyan-500/30">
+          <h2 className="text-5xl font-black mb-6">
             Siap Bekerja & Berkembang
           </h2>
 
@@ -308,7 +309,7 @@ export default function PortfolioLamaranKerja() {
             Saya siap memberikan kontribusi terbaik di bidang teknologi, administrasi, maupun manufaktur dengan kemampuan teknis, komunikasi, dan kerja tim yang saya miliki.
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-5 mt-8 md:mt-10">
+          <div className="flex flex-wrap justify-center gap-5 mt-10">
             <a
               href="mailto:esterrenata16@gmail.com"
               className="bg-black text-white px-8 py-4 rounded-2xl font-bold hover:scale-105 transition"
@@ -328,7 +329,7 @@ export default function PortfolioLamaranKerja() {
       </section>
 
       {/* Footer */}
-      <footer className="text-center py-6 md:py-10 border-t border-white/10 text-gray-400">
+      <footer className="text-center py-10 border-t border-white/10 text-gray-400">
         © 2026 Esther Renata — Portfolio Website
       </footer>
     </div>
